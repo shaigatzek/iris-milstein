@@ -167,7 +167,7 @@ export default function HebrewPage() {
       <section className="relative min-h-screen flex items-center pt-16" id="contact">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/property-garden.jpg"
+            src="/images/property-garden.jpeg"
             alt="נכס יוקרה"
             fill
             priority
@@ -240,7 +240,7 @@ export default function HebrewPage() {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16">
             <div>
               <div className="relative h-72 md:h-96 overflow-hidden mb-6">
-                <Image src="/images/hero-bg.jpg" alt="הרצליה פיתוח" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                <Image src="/images/hero-bg.jpeg" alt="הרצליה פיתוח" fill className="object-cover transition-transform duration-700 hover:scale-105" />
                 <div className="absolute bottom-4 right-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-hebrew-sans">
                   שווי ממוצע $15M+
                 </div>
@@ -269,7 +269,7 @@ export default function HebrewPage() {
 
             <div>
               <div className="relative h-72 md:h-96 overflow-hidden mb-6">
-                <Image src="/images/property-pool.jpg" alt="כפר שמריהו" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                <Image src="/images/property-pool.jpeg" alt="כפר שמריהו" fill className="object-cover transition-transform duration-700 hover:scale-105" />
                 <div className="absolute bottom-4 right-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-hebrew-sans">
                   פרטיות מוחלטת
                 </div>
@@ -303,12 +303,12 @@ export default function HebrewPage() {
       <section className="bg-taupe py-4">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
           {[
-            'interior-kitchen.jpg',
-            'property-exterior.jpg',
-            'property-pool.jpg',
-            'interior-dining.jpg',
-            'property-garden.jpg',
-            'hero-bg.jpg',
+            'interior-kitchen.jpeg',
+            'property-exterior.jpeg',
+            'property-pool.jpeg',
+            'interior-dining.jpeg',
+            'property-garden.jpeg',
+            'hero-bg.jpeg',
           ].map((img) => (
             <div key={img} className="relative h-32 md:h-48 overflow-hidden group">
               <Image src={`/images/${img}`} alt="נכס" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
@@ -323,7 +323,7 @@ export default function HebrewPage() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div className="relative order-2 md:order-1">
               <div className="relative h-[480px] md:h-[600px] overflow-hidden">
-                <Image src="/images/interior-dining.jpg" alt="איריס מילשטיין" fill className="object-cover" />
+                <Image src="/images/interior-dining.jpeg" alt="איריס מילשטיין" fill className="object-cover" />
               </div>
               <div className="absolute -bottom-4 -left-4 w-48 h-48 border border-rose/30 -z-10" />
             </div>

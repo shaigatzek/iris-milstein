@@ -180,7 +180,7 @@ export default function EnglishPage() {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-bg.jpg"
+            src="/images/hero-bg.jpeg"
             alt="Luxury estate"
             fill
             priority
@@ -258,7 +258,7 @@ export default function EnglishPage() {
             {/* Herzliya */}
             <div>
               <div className="relative h-72 md:h-96 overflow-hidden mb-6">
-                <Image src="/images/hero-bg.jpg" alt="Herzliya Pituach" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                <Image src="/images/hero-bg.jpeg" alt="Herzliya Pituach" fill className="object-cover transition-transform duration-700 hover:scale-105" />
                 <div className="absolute bottom-4 left-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-sans">
                   $15M+ Average Estate Value
                 </div>
@@ -289,7 +289,7 @@ export default function EnglishPage() {
             {/* Kfar Shmaryahu */}
             <div>
               <div className="relative h-72 md:h-96 overflow-hidden mb-6">
-                <Image src="/images/property-garden.jpg" alt="Kfar Shmaryahu" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                <Image src="/images/property-garden.jpeg" alt="Kfar Shmaryahu" fill className="object-cover transition-transform duration-700 hover:scale-105" />
                 <div className="absolute bottom-4 left-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-sans">
                   Ultra-Private Enclave
                 </div>
@@ -324,12 +324,12 @@ export default function EnglishPage() {
       <section className="bg-taupe py-4">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
           {[
-            'property-pool.jpg',
-            'interior-dining.jpg',
-            'property-exterior.jpg',
-            'interior-kitchen.jpg',
-            'hero-bg.jpg',
-            'property-garden.jpg',
+            'property-pool.jpeg',
+            'interior-dining.jpeg',
+            'property-exterior.jpeg',
+            'interior-kitchen.jpeg',
+            'hero-bg.jpeg',
+            'property-garden.jpeg',
           ].map((img) => (
             <div key={img} className="relative h-32 md:h-48 overflow-hidden group">
               <Image
@@ -349,7 +349,7 @@ export default function EnglishPage() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div className="relative">
               <div className="relative h-[480px] md:h-[600px] overflow-hidden">
-                <Image src="/images/interior-dining.jpg" alt="Iris Milstein" fill className="object-cover" />
+                <Image src="/images/interior-dining.jpeg" alt="Iris Milstein" fill className="object-cover" />
               </div>
               {/* Decorative frame */}
               <div className="absolute -bottom-4 -right-4 w-48 h-48 border border-rose/30 -z-10" />
