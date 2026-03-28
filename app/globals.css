@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Remove number input arrows */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+@layer components {
+  /* Minimal input style */
+  .input-luxury {
+    @apply w-full bg-transparent border-0 border-b border-charcoal/30 py-3 px-0
+           text-charcoal placeholder:text-charcoal/40 text-sm
+           focus:outline-none focus:border-rose transition-colors duration-200;
+  }
+
+  .input-luxury-light {
+    @apply w-full bg-transparent border-0 border-b border-white/40 py-3 px-0
+           text-white placeholder:text-white/50 text-sm
+           focus:outline-none focus:border-rose transition-colors duration-200;
+  }
+
+  .btn-rose {
+    @apply w-full bg-rose hover:bg-rose-dark text-white text-xs tracking-widest
+           uppercase py-4 transition-colors duration-300 font-sans font-medium;
+  }
+
+  .section-label {
+    @apply text-xs tracking-[0.3em] uppercase text-rose font-sans font-medium;
+  }
+
+  .section-label-dark {
+    @apply text-xs tracking-[0.3em] uppercase text-charcoal/50 font-sans font-medium;
+  }
+}
