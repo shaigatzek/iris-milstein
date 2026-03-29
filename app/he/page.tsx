@@ -126,9 +126,12 @@ function NavBarHe() {
         </div>
 
         {/* Logo — flex-shrink-0 keeps it in normal flow, right side in RTL */}
-        <a href="/he" className="flex-shrink-0 flex flex-col leading-none">
-          <span className="text-white text-lg md:text-xl tracking-[0.2em] uppercase font-light" style={{ fontFamily: "'Inter', sans-serif" }}>IRIS MILSTEIN</span>
-          <span className="text-white/50 text-[9px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>LUXURY PROPERTIES</span>
+        <a href="/he" className="flex-shrink-0 flex items-center gap-2">
+          <div className="flex flex-col leading-none">
+            <span className="text-white text-lg md:text-xl tracking-[0.2em] uppercase font-light" style={{ fontFamily: "'Inter', sans-serif" }}>IRIS MILSTEIN</span>
+            <span className="text-white/50 text-[9px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>LUXURY PROPERTIES</span>
+          </div>
+          <Image src="/images/M-logo-white.png" alt="M" width={36} height={36} className="h-9 w-auto" />
         </a>
 
         {/* Right: phone + CTA */}
