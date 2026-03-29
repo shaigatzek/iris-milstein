@@ -126,7 +126,7 @@ function NavBar() {
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex-shrink-0">
-          <Image src="/images/logo.png" alt="Iris Milstein" width={130} height={40} className="h-8 w-auto object-contain brightness-0 invert" />
+          <Image src="/images/logo.png" alt="Iris Milstein" width={130} height={40} className="h-8 w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}
@@ -160,11 +160,12 @@ function NavBar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-dark border-t border-white/10 px-5 py-4 space-y-4">
+          <a href="#" className="block text-white/70 text-xs tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Home</a>
           <a href="#locations" className="block text-white/70 text-xs tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Locations</a>
           <a href="#about" className="block text-white/70 text-xs tracking-widest uppercase" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#testimonials" className="block text-white/70 text-xs tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Testimonials</a>
           <a href="tel:+97252252577" className="block text-white/80 text-xs">+972-52-2525277</a>
-          <a href="#contact" className="block bg-rose text-white text-xs tracking-widest uppercase px-4 py-3 text-center">Private Viewing</a>
+          <a href="#contact" className="block bg-rose text-white text-xs tracking-widest uppercase px-4 py-3 text-center" onClick={() => setMenuOpen(false)}>Private Viewing</a>
         </div>
       )}
     </nav>
@@ -249,10 +250,13 @@ export default function EnglishPage() {
       </section>
 
       {/* ── MOBILE FORM (below hero, mobile only) ─────────── */}
-      <section id="contact" className="md:hidden bg-ivory px-5 py-10 shadow-inner">
-        <h2 className="font-serif text-charcoal text-2xl mb-1">Request Exclusive Portfolio Access</h2>
-        <p className="text-charcoal/50 text-xs tracking-wider uppercase mb-7">Pre-Qualification Required</p>
-        <LeadForm />
+      <section className="md:hidden bg-ivory shadow-inner">
+        {/* scroll-mt ensures navbar doesn't cover the heading */}
+        <div id="contact" className="scroll-mt-20 px-5 pt-10 pb-10">
+          <h2 className="font-serif text-charcoal text-2xl mb-1">Request Exclusive Portfolio Access</h2>
+          <p className="text-charcoal/50 text-xs tracking-wider uppercase mb-7">Pre-Qualification Required</p>
+          <LeadForm />
+        </div>
       </section>
 
       {/* ── LOCATIONS ─────────────────────────────────────── */}
@@ -484,7 +488,7 @@ export default function EnglishPage() {
       {/* ── FOOTER ────────────────────────────────────────── */}
       <footer className="bg-dark border-t border-white/5 py-10 px-5 md:px-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <Image src="/images/logo.png" alt="Iris Milstein" width={120} height={36} className="h-7 w-auto brightness-0 invert opacity-80" />
+          <Image src="/images/logo.png" alt="Iris Milstein" width={120} height={36} className="h-7 w-auto opacity-90" />
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">+972-52-2525277</a>
             <a href="mailto:iris@square34.com" className="hover:text-white transition-colors">iris@square34.com</a>

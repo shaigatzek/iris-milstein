@@ -123,14 +123,9 @@ function NavBarHe() {
           <a href="/" className="text-white/50 hover:text-white text-xs tracking-widest uppercase transition-colors">EN</a>
         </div>
 
-        {/* Center: Logo */}
-        <a href="/he" className="absolute left-1/2 -translate-x-1/2 hidden md:block">
-          <Image src="/images/logo.png" alt="Iris Milstein" width={130} height={40} className="h-8 w-auto object-contain brightness-0 invert" />
-        </a>
-
-        {/* Mobile logo */}
-        <a href="/he" className="md:hidden">
-          <Image src="/images/logo.png" alt="Iris Milstein" width={100} height={32} className="h-7 w-auto brightness-200" />
+        {/* Logo — flex-shrink-0 keeps it in normal flow, right side in RTL */}
+        <a href="/he" className="flex-shrink-0">
+          <Image src="/images/logo.png" alt="Iris Milstein" width={130} height={40} className="h-8 w-auto object-contain" />
         </a>
 
         {/* Right: phone + CTA */}
@@ -147,11 +142,12 @@ function NavBarHe() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-dark border-t border-white/10 px-5 py-4 space-y-4">
-          <a href="#locations" className="block text-white/70 text-sm" onClick={() => setMenuOpen(false)}>אזורים</a>
-          <a href="#about" className="block text-white/70 text-sm" onClick={() => setMenuOpen(false)}>אודות</a>
-          <a href="#testimonials" className="block text-white/70 text-sm" onClick={() => setMenuOpen(false)}>המלצות</a>
+          <a href="/he" className="block text-white/70 text-sm font-hebrew-sans" onClick={() => setMenuOpen(false)}>ראשי</a>
+          <a href="#locations" className="block text-white/70 text-sm font-hebrew-sans" onClick={() => setMenuOpen(false)}>אזורים</a>
+          <a href="#about" className="block text-white/70 text-sm font-hebrew-sans" onClick={() => setMenuOpen(false)}>אודות</a>
+          <a href="#testimonials" className="block text-white/70 text-sm font-hebrew-sans" onClick={() => setMenuOpen(false)}>המלצות</a>
           <a href="tel:+97252252577" className="block text-white/80 text-sm">052-2525277</a>
-          <a href="#contact" className="block bg-rose text-white text-sm px-4 py-3 text-center font-hebrew-sans">צפייה פרטית</a>
+          <a href="#contact" className="block bg-rose text-white text-sm px-4 py-3 text-center font-hebrew-sans" onClick={() => setMenuOpen(false)}>צפייה פרטית</a>
         </div>
       )}
     </nav>
@@ -232,10 +228,12 @@ export default function HebrewPage() {
       </section>
 
       {/* ── MOBILE FORM (below hero, mobile only) ─────────── */}
-      <section id="contact" className="md:hidden bg-ivory px-5 py-10">
-        <h2 className="font-hebrew text-charcoal text-2xl mb-1">השאירו פרטים לפגישת ייעוץ</h2>
-        <p className="text-charcoal/50 text-xs mb-7 font-hebrew-sans">ניצור איתכם קשר בהקדם</p>
-        <LeadFormHe />
+      <section className="md:hidden bg-ivory">
+        <div id="contact" className="scroll-mt-20 px-5 pt-10 pb-10">
+          <h2 className="font-hebrew text-charcoal text-2xl mb-1">השאירו פרטים לפגישת ייעוץ</h2>
+          <p className="text-charcoal/50 text-xs mb-7 font-hebrew-sans">ניצור איתכם קשר בהקדם</p>
+          <LeadFormHe />
+        </div>
       </section>
 
       {/* ── LOCATIONS ─────────────────────────────────────── */}
@@ -441,7 +439,7 @@ export default function HebrewPage() {
       {/* ── FOOTER ────────────────────────────────────────── */}
       <footer className="bg-dark border-t border-white/5 py-10 px-5 md:px-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <Image src="/images/logo.png" alt="Iris Milstein" width={120} height={36} className="h-7 w-auto brightness-0 invert opacity-80" />
+          <Image src="/images/logo.png" alt="Iris Milstein" width={120} height={36} className="h-7 w-auto opacity-90" />
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs font-hebrew-sans">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">052-2525277</a>
             <a href="mailto:iris@square34.com" className="hover:text-white transition-colors">iris@square34.com</a>
