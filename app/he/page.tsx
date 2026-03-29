@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useState, FormEvent } from 'react'
+import { useState, FormEvent, useEffect } from 'react'
 
 /* ─── TESTIMONIALS ───────────────────────────────────────── */
 const testimonials = [
@@ -102,6 +102,7 @@ function LeadFormHe() {
 /* ─── NAVBAR ─────────────────────────────────────────────── */
 function NavBarHe() {
   const [menuOpen, setMenuOpen] = useState(false)
+  useEffect(() => { window.scrollTo(0, 0) }, [])
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
@@ -124,7 +125,7 @@ function NavBarHe() {
 
         {/* Center: Logo */}
         <a href="/he" className="absolute left-1/2 -translate-x-1/2 hidden md:block">
-          <Image src="/images/logo.png" alt="Iris Milstein" width={130} height={40} className="h-8 w-auto object-contain brightness-200" />
+          <Image src="/images/logo.png" alt="Iris Milstein" width={130} height={40} className="h-8 w-auto object-contain brightness-0 invert" />
         </a>
 
         {/* Mobile logo */}
@@ -164,7 +165,7 @@ export default function HebrewPage() {
       <NavBarHe />
 
       {/* ── HERO ──────────────────────────────────────────── */}
-      <section className="relative min-h-screen flex items-center pt-16" id="contact">
+      <section className="relative flex items-end md:items-center pt-16 min-h-[100svh] md:min-h-screen">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/property-garden.jpeg"
@@ -174,13 +175,13 @@ export default function HebrewPage() {
             className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-dark/80 via-dark/50 to-dark/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-dark/20 to-transparent" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-10 w-full py-20 md:py-0 md:min-h-screen flex items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-10 w-full pb-16 md:py-0 md:min-h-screen flex items-end md:items-center">
           <div className="flex flex-col md:flex-row-reverse md:items-center gap-10 md:gap-20 w-full">
 
-            {/* Right (visually right in RTL) — headline */}
+            {/* Headline */}
             <div className="flex-1 max-w-xl">
               <div className="flex items-center gap-3 mb-6 flex-row-reverse md:flex-row">
                 <div className="w-8 h-px bg-rose" />
@@ -193,10 +194,10 @@ export default function HebrewPage() {
               <p className="text-white/75 text-base md:text-lg leading-relaxed font-light mb-2 font-hebrew-sans">
                 וילות ובתי יוקרה פרטיים בהרצליה פיתוח וכפר שמריהו.
               </p>
-              <p className="text-white/55 text-sm font-light mb-8 font-hebrew-sans">
+              <p className="text-white/55 text-sm font-light mb-6 font-hebrew-sans">
                 נכסים שאינם מוצעים לציבור — אך ורק ללקוחות נבחרים.
               </p>
-              <div className="flex flex-wrap gap-6">
+              <div className="flex flex-wrap gap-6 mb-6">
                 <div className="flex items-center gap-2 text-white/60 text-xs font-hebrew-sans">
                   <svg className="w-3.5 h-3.5 text-rose flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -210,10 +211,17 @@ export default function HebrewPage() {
                   סודיות מוחלטת
                 </div>
               </div>
+              {/* Mobile CTA */}
+              <a
+                href="#contact"
+                className="md:hidden inline-block bg-rose hover:bg-rose-dark text-white text-xs tracking-widest uppercase px-8 py-4 transition-colors font-hebrew-sans"
+              >
+                לפגישת ייעוץ פרטית
+              </a>
             </div>
 
-            {/* Left (visually left in RTL) — form */}
-            <div className="w-full md:w-[400px] bg-ivory/95 backdrop-blur-sm p-8 shadow-2xl">
+            {/* Form — desktop only */}
+            <div className="hidden md:block w-full md:w-[400px] bg-ivory/95 backdrop-blur-sm p-8 shadow-2xl">
               <h2 className="font-hebrew text-charcoal text-xl mb-1">השאירו פרטים לפגישת ייעוץ</h2>
               <p className="text-charcoal/50 text-xs mb-7 font-hebrew-sans">ניצור איתכם קשר בהקדם</p>
               <LeadFormHe />
@@ -221,6 +229,13 @@ export default function HebrewPage() {
 
           </div>
         </div>
+      </section>
+
+      {/* ── MOBILE FORM (below hero, mobile only) ─────────── */}
+      <section id="contact" className="md:hidden bg-ivory px-5 py-10">
+        <h2 className="font-hebrew text-charcoal text-2xl mb-1">השאירו פרטים לפגישת ייעוץ</h2>
+        <p className="text-charcoal/50 text-xs mb-7 font-hebrew-sans">ניצור איתכם קשר בהקדם</p>
+        <LeadFormHe />
       </section>
 
       {/* ── LOCATIONS ─────────────────────────────────────── */}
@@ -426,7 +441,7 @@ export default function HebrewPage() {
       {/* ── FOOTER ────────────────────────────────────────── */}
       <footer className="bg-dark border-t border-white/5 py-10 px-5 md:px-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <Image src="/images/logo.png" alt="Iris Milstein" width={120} height={36} className="h-7 w-auto brightness-200 opacity-80" />
+          <Image src="/images/logo.png" alt="Iris Milstein" width={120} height={36} className="h-7 w-auto brightness-0 invert opacity-80" />
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs font-hebrew-sans">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">052-2525277</a>
             <a href="mailto:iris@square34.com" className="hover:text-white transition-colors">iris@square34.com</a>

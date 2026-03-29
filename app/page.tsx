@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useState, FormEvent } from 'react'
+import { useState, FormEvent, useEffect } from 'react'
 
 /* ─── TESTIMONIALS DATA ──────────────────────────────────── */
 const testimonials = [
@@ -119,12 +119,14 @@ function LeadForm() {
 /* ─── NAVBAR ─────────────────────────────────────────────── */
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  // Fix: ensure page always starts at top
+  useEffect(() => { window.scrollTo(0, 0) }, [])
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex-shrink-0">
-          <Image src="/images/logo.png" alt="Iris Milstein" width={130} height={40} className="h-8 w-auto object-contain brightness-200" />
+          <Image src="/images/logo.png" alt="Iris Milstein" width={130} height={40} className="h-8 w-auto object-contain brightness-0 invert" />
         </a>
 
         {/* Desktop Nav */}
@@ -176,7 +178,8 @@ export default function EnglishPage() {
       <NavBar />
 
       {/* ── HERO ──────────────────────────────────────────── */}
-      <section className="relative min-h-screen flex items-center pt-16" id="contact">
+      {/* Mobile: full-screen image with text only. Desktop: text + form side by side */}
+      <section className="relative flex items-end md:items-center pt-16 min-h-[100svh] md:min-h-screen">
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -186,15 +189,14 @@ export default function EnglishPage() {
             priority
             className="object-cover object-center"
           />
-          {/* Gradient overlay — darker at bottom-left for text legibility */}
           <div className="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/50 to-dark/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-dark/20 to-transparent" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-10 w-full py-20 md:py-0 md:min-h-screen flex items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-10 w-full pb-16 md:py-0 md:min-h-screen flex items-end md:items-center">
           <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-20 w-full">
 
-            {/* Left — headline */}
+            {/* Headline */}
             <div className="flex-1 max-w-xl">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-8 h-px bg-rose" />
@@ -212,7 +214,7 @@ export default function EnglishPage() {
                 Herzliya Pituach & Kfar Shmaryahu.<br />
                 <em className="not-italic font-light">Discreetly Presented. Globally Secured.</em>
               </p>
-              <div className="flex flex-wrap gap-6">
+              <div className="flex flex-wrap gap-6 mb-8 md:mb-0">
                 <div className="flex items-center gap-2 text-white/60 text-xs">
                   <svg className="w-3.5 h-3.5 text-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -226,10 +228,17 @@ export default function EnglishPage() {
                   Absolute Discretion
                 </div>
               </div>
+              {/* Mobile CTA — scrolls to form below */}
+              <a
+                href="#contact"
+                className="md:hidden inline-block mt-4 bg-rose hover:bg-rose-dark text-white text-xs tracking-widest uppercase px-8 py-4 transition-colors"
+              >
+                Request Private Access
+              </a>
             </div>
 
-            {/* Right — lead form */}
-            <div className="w-full md:w-[420px] bg-ivory/95 backdrop-blur-sm p-8 shadow-2xl">
+            {/* Form — hidden on mobile (shown below hero), visible on desktop */}
+            <div className="hidden md:block w-full md:w-[420px] bg-ivory/95 backdrop-blur-sm p-8 shadow-2xl">
               <h2 className="font-serif text-charcoal text-xl mb-1">Request Exclusive Portfolio Access</h2>
               <p className="text-charcoal/50 text-xs tracking-wider uppercase mb-7">Pre-Qualification Required</p>
               <LeadForm />
@@ -237,6 +246,13 @@ export default function EnglishPage() {
 
           </div>
         </div>
+      </section>
+
+      {/* ── MOBILE FORM (below hero, mobile only) ─────────── */}
+      <section id="contact" className="md:hidden bg-ivory px-5 py-10 shadow-inner">
+        <h2 className="font-serif text-charcoal text-2xl mb-1">Request Exclusive Portfolio Access</h2>
+        <p className="text-charcoal/50 text-xs tracking-wider uppercase mb-7">Pre-Qualification Required</p>
+        <LeadForm />
       </section>
 
       {/* ── LOCATIONS ─────────────────────────────────────── */}
@@ -468,7 +484,7 @@ export default function EnglishPage() {
       {/* ── FOOTER ────────────────────────────────────────── */}
       <footer className="bg-dark border-t border-white/5 py-10 px-5 md:px-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <Image src="/images/logo.png" alt="Iris Milstein" width={120} height={36} className="h-7 w-auto brightness-200 opacity-80" />
+          <Image src="/images/logo.png" alt="Iris Milstein" width={120} height={36} className="h-7 w-auto brightness-0 invert opacity-80" />
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">+972-52-2525277</a>
             <a href="mailto:iris@square34.com" className="hover:text-white transition-colors">iris@square34.com</a>
