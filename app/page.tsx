@@ -126,8 +126,9 @@ function NavBar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex-shrink-0">
-          <Image src="/images/logo-white.png" alt="Iris Milstein" width={160} height={48} className="h-10 w-auto"  />
+        <a href="/" className="flex-shrink-0 flex flex-col leading-none">
+          <span className="text-white text-lg md:text-xl tracking-[0.2em] uppercase font-light" style={{ fontFamily: "'Inter', sans-serif" }}>IRIS MILSTEIN</span>
+          <span className="text-white/50 text-[9px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>LUXURY PROPERTIES</span>
         </a>
 
         {/* Desktop Nav */}
@@ -491,7 +492,10 @@ export default function EnglishPage() {
       {/* ── FOOTER ────────────────────────────────────────── */}
       <footer className="bg-dark border-t border-white/5 py-10 px-5 md:px-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <Image src="/images/logo-white.png" alt="Iris Milstein" width={140} height={42} className="h-9 w-auto opacity-80"  />
+          <div className="flex flex-col leading-none">
+            <span className="text-white text-base tracking-[0.2em] uppercase font-light opacity-80" style={{ fontFamily: "'Inter', sans-serif" }}>IRIS MILSTEIN</span>
+            <span className="text-white/40 text-[8px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>LUXURY PROPERTIES</span>
+          </div>
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">+972-52-2525277</a>
             <a href="mailto:iris@square34.com" className="hover:text-white transition-colors">iris@square34.com</a>
