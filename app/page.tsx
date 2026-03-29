@@ -131,6 +131,7 @@ function NavBar() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
+          <a href="/" className="text-white/70 hover:text-white text-xs tracking-widest uppercase transition-colors">Home</a>
           <a href="#locations" className="text-white/70 hover:text-white text-xs tracking-widest uppercase transition-colors">Locations</a>
           <a href="#about" className="text-white/70 hover:text-white text-xs tracking-widest uppercase transition-colors">About</a>
           <a href="#testimonials" className="text-white/70 hover:text-white text-xs tracking-widest uppercase transition-colors">Testimonials</a>
@@ -160,10 +161,11 @@ function NavBar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-dark border-t border-white/10 px-5 py-4 space-y-4">
-          <a href="#" className="block text-white/70 text-xs tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Home</a>
+          <a href="/" className="block text-white/70 text-xs tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Home</a>
           <a href="#locations" className="block text-white/70 text-xs tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Locations</a>
           <a href="#about" className="block text-white/70 text-xs tracking-widest uppercase" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#testimonials" className="block text-white/70 text-xs tracking-widest uppercase" onClick={() => setMenuOpen(false)}>Testimonials</a>
+          <a href="/he" className="block text-white/50 text-xs tracking-widest uppercase" onClick={() => setMenuOpen(false)}>עברית</a>
           <a href="tel:+97252252577" className="block text-white/80 text-xs">+972-52-2525277</a>
           <a href="#contact" className="block bg-rose text-white text-xs tracking-widest uppercase px-4 py-3 text-center" onClick={() => setMenuOpen(false)}>Private Viewing</a>
         </div>

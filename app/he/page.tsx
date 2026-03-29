@@ -117,6 +117,7 @@ function NavBarHe() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
+          <a href="/he" className="text-white/70 hover:text-white text-xs tracking-widest uppercase transition-colors">בית</a>
           <a href="#locations" className="text-white/70 hover:text-white text-xs tracking-widest uppercase transition-colors">אזורים</a>
           <a href="#about" className="text-white/70 hover:text-white text-xs tracking-widest uppercase transition-colors">אודות</a>
           <a href="#testimonials" className="text-white/70 hover:text-white text-xs tracking-widest uppercase transition-colors">המלצות</a>
