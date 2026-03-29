@@ -127,7 +127,7 @@ function NavBar() {
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex-shrink-0">
-          <Image src="/images/logo-white.png" alt="Iris Milstein" width={160} height={48} className="h-10 w-auto" style={{ mixBlendMode: 'screen' }} />
+          <Image src="/images/logo-white.png" alt="Iris Milstein" width={160} height={48} className="h-10 w-auto"  />
         </a>
 
         {/* Desktop Nav */}
@@ -491,7 +491,7 @@ export default function EnglishPage() {
       {/* ── FOOTER ────────────────────────────────────────── */}
       <footer className="bg-dark border-t border-white/5 py-10 px-5 md:px-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <Image src="/images/logo-white.png" alt="Iris Milstein" width={140} height={42} className="h-9 w-auto opacity-80" style={{ mixBlendMode: 'screen' }} />
+          <Image src="/images/logo-white.png" alt="Iris Milstein" width={140} height={42} className="h-9 w-auto opacity-80"  />
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">+972-52-2525277</a>
             <a href="mailto:iris@square34.com" className="hover:text-white transition-colors">iris@square34.com</a>
