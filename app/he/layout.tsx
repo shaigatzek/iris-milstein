@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Frank_Ruhl_Libre, Heebo } from 'next/font/google'
-import '../globals.css'
 
 const frankRuhlLibre = Frank_Ruhl_Libre({
   subsets: ['hebrew', 'latin'],
@@ -30,10 +29,8 @@ export const metadata: Metadata = {
 
 export default function HebrewLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="he" dir="rtl" className={`${frankRuhlLibre.variable} ${heebo.variable}`}>
-      <body className="bg-ivory text-charcoal font-hebrew-sans antialiased" style={{ direction: 'rtl' }}>
-        {children}
-      </body>
-    </html>
+    <div dir="rtl" lang="he" className={`${frankRuhlLibre.variable} ${heebo.variable} bg-ivory text-charcoal font-hebrew-sans antialiased`} style={{ direction: 'rtl', minHeight: '100vh' }}>
+      {children}
+    </div>
   )
 }
