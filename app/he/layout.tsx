@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Noto_Serif_Hebrew, Heebo } from 'next/font/google'
+import { Frank_Ruhl_Libre, Heebo } from 'next/font/google'
 import '../globals.css'
 
-const notoSerifHebrew = Noto_Serif_Hebrew({
+const frankRuhlLibre = Frank_Ruhl_Libre({
   subsets: ['hebrew', 'latin'],
-  weight: ['200', '300', '400'],
+  weight: ['300', '400', '500'],
   variable: '--font-frank',
   display: 'swap',
 })
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function HebrewLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="he" dir="rtl" className={`${notoSerifHebrew.variable} ${heebo.variable}`}>
+    <html lang="he" dir="rtl" className={`${frankRuhlLibre.variable} ${heebo.variable}`}>
       <body className="bg-ivory text-charcoal font-hebrew-sans antialiased" style={{ direction: 'rtl' }}>
         {children}
       </body>

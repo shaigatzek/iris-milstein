@@ -240,8 +240,8 @@ export default function HebrewPage() {
                 <span className="text-xs tracking-[0.2em] uppercase text-white/80 font-hebrew-sans">נכסים אקסקלוסיביים מחוץ לשוק</span>
               </div>
               <h1 className="font-hebrew text-white leading-tight mb-5">
-                <span className="block text-4xl md:text-6xl" style={{fontWeight: 200}}>הנכס שחיכית לו</span>
-                <span className="block text-4xl md:text-6xl text-rose" style={{fontWeight: 200}}>על קו הים</span>
+                <span className="block text-4xl md:text-6xl" style={{fontWeight: 300}}>הנכס שחיכית לו</span>
+                <span className="block text-4xl md:text-6xl text-rose" style={{fontWeight: 300}}>על קו הים</span>
               </h1>
               <p className="text-white/75 text-base md:text-lg leading-relaxed font-light mb-2 font-hebrew-sans">
                 וילות ובתי יוקרה פרטיים בהרצליה פיתוח וכפר שמריהו.
@@ -297,7 +297,7 @@ export default function HebrewPage() {
         <div className="max-w-7xl mx-auto px-5 md:px-10">
           <div className="text-center mb-14">
             <div className="section-label-dark mb-3 font-hebrew-sans">האזורים המובחרים</div>
-            <h2 className="font-hebrew text-3xl md:text-5xl text-charcoal" style={{fontWeight: 200}}>
+            <h2 className="font-hebrew text-3xl md:text-5xl text-charcoal" style={{fontWeight: 300}}>
               הכתובות הנחשקות ביותר בישראל
             </h2>
             <div className="w-12 h-px bg-rose mx-auto mt-5" />
@@ -315,7 +315,7 @@ export default function HebrewPage() {
                 </div>
               </div>
               <div className="section-label mb-2 font-hebrew-sans">היכן החדשנות פוגשת את הים</div>
-              <h3 className="font-hebrew text-2xl md:text-3xl text-charcoal mb-3" style={{fontWeight: 200}}>הרצליה פיתוח</h3>
+              <h3 className="font-hebrew text-2xl md:text-3xl text-charcoal mb-3" style={{fontWeight: 300}}>הרצליה פיתוח</h3>
               <p className="text-text-light text-sm leading-relaxed mb-5 font-hebrew-sans">
                 הכתובת החופית היוקרתית ביותר בישראל, בה גרים מנהלי הייטק, בעלי הון ומשפחות מהעולם. צעדים מהים התיכון, צמוד לסיליקון ואדי ולמרינה הגדולה בישראל.
               </p>
@@ -344,7 +344,7 @@ export default function HebrewPage() {
                 </div>
               </div>
               <div className="section-label mb-2 font-hebrew-sans">היכן הפרטיות פוגשת את המורשת</div>
-              <h3 className="font-hebrew text-2xl md:text-3xl text-charcoal mb-3" style={{fontWeight: 200}}>כפר שמריהו</h3>
+              <h3 className="font-hebrew text-2xl md:text-3xl text-charcoal mb-3" style={{fontWeight: 300}}>כפר שמריהו</h3>
               <p className="text-text-light text-sm leading-relaxed mb-5 font-hebrew-sans">
                 הכפר הסגור והיוקרתי ביותר בישראל — בית לדיפלומטים, שושלות עסקיות ומשפחות ותיקות. אחוזות מגודרות, גנים עתיקים ושקט מוחלט.
               </p>
@@ -398,7 +398,7 @@ export default function HebrewPage() {
             </div>
             <div className="order-1 md:order-2 text-right">
               <div className="section-label mb-4 font-hebrew-sans">אודות איריס</div>
-              <h2 className="font-hebrew text-3xl md:text-4xl text-charcoal leading-tight mb-1" style={{fontWeight: 200}}>
+              <h2 className="font-hebrew text-3xl md:text-4xl text-charcoal leading-tight mb-1" style={{fontWeight: 300}}>
                 איריס מילשטיין
               </h2>
               <p className="text-text-light text-xs tracking-widest uppercase mb-6 font-hebrew-sans">נדל"ן | הרצליה פיתוח וכפר שמריהו</p>
@@ -460,7 +460,7 @@ export default function HebrewPage() {
         <div className="max-w-7xl mx-auto px-5 md:px-10">
           <div className="text-center mb-14">
             <div className="section-label-dark mb-3 font-hebrew-sans">לקוחות ממליצים</div>
-            <h2 className="font-hebrew text-3xl md:text-5xl text-charcoal" style={{fontWeight: 200}}>
+            <h2 className="font-hebrew text-3xl md:text-5xl text-charcoal" style={{fontWeight: 300}}>
               אמון של משפחות מובחרות
             </h2>
             <div className="w-12 h-px bg-rose mx-auto mt-5" />
@@ -493,7 +493,7 @@ export default function HebrewPage() {
       <section className="bg-dark py-16 md:py-20 text-center">
         <div className="max-w-2xl mx-auto px-5">
           <div className="text-xs tracking-[0.2em] uppercase text-white/50 mb-4 font-hebrew-sans">צרו קשר</div>
-          <h2 className="font-hebrew text-3xl md:text-4xl text-white mb-4" style={{fontWeight: 200}}>
+          <h2 className="font-hebrew text-3xl md:text-4xl text-white mb-4" style={{fontWeight: 300}}>
             מוכנים לגלות מה זמין?
           </h2>
           <p className="text-white/50 text-sm mb-8 font-hebrew-sans font-light">
