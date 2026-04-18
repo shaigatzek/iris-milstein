@@ -429,12 +429,7 @@ export default function EnglishPage() {
       {/* ── ABOUT ─────────────────────────────────────────── */}
       <section id="about" className="bg-ivory py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-5 md:px-10">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-            <div className="relative flex justify-center">
-              <div className="relative w-[180px] overflow-hidden" style={{aspectRatio: '3/4'}}>
-                <Image src="/images/iris-profile.jpeg" alt="Iris Milstein luxury real estate expert Herzliya Pituach" fill className="object-cover object-top" />
-              </div>
-            </div>
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
             <div>
               <div className="section-label mb-4">About Iris</div>
               <h2 className="font-serif text-3xl md:text-4xl text-charcoal font-light leading-tight mb-1">
@@ -483,6 +478,11 @@ export default function EnglishPage() {
                   </svg>
                   iris@irismilstein.com
                 </a>
+              </div>
+            </div>
+            <div className="flex justify-end">
+              <div className="relative w-[270px] overflow-hidden" style={{aspectRatio: '3/4'}}>
+                <Image src="/images/iris-profile.jpeg" alt="Iris Milstein luxury real estate expert Herzliya Pituach" fill className="object-cover object-top" />
               </div>
             </div>
           </div>
