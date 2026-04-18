@@ -390,11 +390,10 @@ export default function HebrewPage() {
       <section id="about" className="bg-ivory py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-5 md:px-10">
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-            <div className="relative order-2 md:order-1">
-              <div className="relative w-full overflow-hidden" style={{aspectRatio: '3/4'}}>
+            <div className="relative order-2 md:order-1 flex justify-center">
+              <div className="relative w-[180px] overflow-hidden" style={{aspectRatio: '3/4'}}>
                 <Image src="/images/iris-profile.jpeg" alt="איריס מילשטיין מומחית נדל&quot;ן יוקרה הרצליה פיתוח" fill className="object-cover object-top" />
               </div>
-              <div className="absolute -bottom-4 -left-4 w-48 h-48 border border-rose/30 -z-10" />
             </div>
             <div className="order-1 md:order-2 text-right">
               <div className="section-label mb-4 font-hebrew-sans">אודות איריס</div>

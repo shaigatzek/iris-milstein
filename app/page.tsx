@@ -430,12 +430,10 @@ export default function EnglishPage() {
       <section id="about" className="bg-ivory py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-5 md:px-10">
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-            <div className="relative">
-              <div className="relative w-full overflow-hidden" style={{aspectRatio: '3/4'}}>
+            <div className="relative flex justify-center">
+              <div className="relative w-[180px] overflow-hidden" style={{aspectRatio: '3/4'}}>
                 <Image src="/images/iris-profile.jpeg" alt="Iris Milstein luxury real estate expert Herzliya Pituach" fill className="object-cover object-top" />
               </div>
-              {/* Decorative frame */}
-              <div className="absolute -bottom-4 -right-4 w-48 h-48 border border-rose/30 -z-10" />
             </div>
             <div>
               <div className="section-label mb-4">About Iris</div>
