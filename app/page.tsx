@@ -428,13 +428,13 @@ export default function EnglishPage() {
               <p className="text-text-light text-xs tracking-widest uppercase mb-6">Real Estate | Herzliya Pituach &amp; Kfar Shmaryahu</p>
               <div className="w-10 h-px bg-rose mb-7" />
               <p className="text-text-light text-sm leading-relaxed mb-5">
-                With over 25 years spanning real estate, law, and marketing, Iris Milstein brings a rare combination of legal precision, market instinct, and creative vision to every transaction. Her career began at one of Israel's premier law firms, where she developed the analytical rigor and contractual expertise that still define her approach today. Combined with a deep background in advertising and marketing, Iris offers clients something few agents can — a complete, 360-degree view of every deal.
+                With over 25 years spanning real estate, law, and marketing, Iris Milstein brings a rare combination of legal precision, market instinct, and creative vision to every transaction. Her career began at one of Israel's premier law firms, where she developed the analytical rigor and contractual expertise that still define her approach today. Combined with a deep background in advertising and marketing, Iris offers clients something few agents can, a complete, 360-degree view of every deal.
               </p>
               <p className="text-text-light text-sm leading-relaxed mb-5">
                 <span className="text-charcoal font-medium">She Knows This Neighborhood.</span> As a Herzliya Pituach resident for over 25 years, Iris doesn't just sell this neighborhood, she lives it. She knows the value of every street, every view, and every property condition. That intimate knowledge is something no algorithm can replicate.
               </p>
               <p className="text-text-light text-sm leading-relaxed mb-5">
-                <span className="text-charcoal font-medium">A Practice Built on Trust.</span> Iris's success is built almost exclusively on referrals — a testament to the relationships she builds and the results she delivers. She earns her clients' trust by working tirelessly on their behalf, offering candid advice.
+                <span className="text-charcoal font-medium">A Practice Built on Trust.</span> Iris's success is built almost exclusively on referrals, a testament to the relationships she builds and the results she delivers. She earns her clients' trust by working tirelessly on their behalf, offering candid advice.
               </p>
               <p className="text-charcoal text-sm font-medium mb-8">
                 Integrity. Energy. Discretion. That's the Iris Milstein standard.
@@ -448,10 +448,6 @@ export default function EnglishPage() {
                   <div className="font-serif text-2xl text-charcoal">100%</div>
                   <div className="text-text-light text-xs mt-0.5">Referral Based</div>
                 </div>
-                <div className="border-l-2 border-rose pl-4">
-                  <div className="font-serif text-2xl text-charcoal">3</div>
-                  <div className="text-text-light text-xs mt-0.5">Languages</div>
-                </div>
               </div>
               <div className="flex gap-4">
                 <a
@@ -464,13 +460,13 @@ export default function EnglishPage() {
                   +972-52-2525277
                 </a>
                 <a
-                  href="mailto:iris@square34.com"
+                  href="mailto:iris@irismilstein.com"
                   className="flex items-center gap-2 text-charcoal hover:text-rose transition-colors text-sm"
                 >
                   <svg className="w-4 h-4" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  iris@square34.com
+                  iris@irismilstein.com
                 </a>
               </div>
             </div>
