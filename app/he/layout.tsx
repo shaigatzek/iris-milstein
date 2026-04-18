@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Frank_Ruhl_Libre, Heebo } from 'next/font/google'
+import { Noto_Serif_Hebrew, Heebo } from 'next/font/google'
 import '../globals.css'
 
-const frankRuhl = Frank_Ruhl_Libre({
+const notoSerifHebrew = Noto_Serif_Hebrew({
   subsets: ['hebrew', 'latin'],
-  weight: ['300', '400', '500'],
+  weight: ['200', '300', '400'],
   variable: '--font-frank',
   display: 'swap',
 })
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'איריס מילשטיין | נדל"ן יוקרה',
     description: 'נכסי יוקרה אקסקלוסיביים בהרצליה פיתוח וכפר שמריהו',
-    url: 'https://square34.com/he',
+    url: 'https://irismilstein.com/he',
     locale: 'he_IL',
     type: 'website',
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function HebrewLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="he" dir="rtl" className={`${frankRuhl.variable} ${heebo.variable}`}>
+    <html lang="he" dir="rtl" className={`${notoSerifHebrew.variable} ${heebo.variable}`}>
       <body className="bg-ivory text-charcoal font-hebrew-sans antialiased" style={{ direction: 'rtl' }}>
         {children}
       </body>

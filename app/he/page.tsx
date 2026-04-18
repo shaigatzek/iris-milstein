@@ -291,9 +291,16 @@ export default function HebrewPage() {
 
           <div className="grid md:grid-cols-2 gap-10 md:gap-16">
             <div>
-              <div className="relative h-72 md:h-96 overflow-hidden mb-6">
-                <Image src="/images/hero-bg.jpeg" alt="הרצליה פיתוח" fill className="object-cover transition-transform duration-700 hover:scale-105" />
-                <div className="absolute bottom-4 right-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-hebrew-sans">
+              <div className="relative h-72 md:h-96 mb-6">
+                <div className="grid grid-cols-2 gap-1 h-full overflow-hidden">
+                  <div className="relative overflow-hidden">
+                    <Image src="/images/pool-yard.jpeg" alt="נכס יוקרה עם בריכה בהרצליה פיתוח" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <Image src="/images/property-swimming-pool.jpeg" alt="וילה עם בריכת שחייה בהרצליה פיתוח" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                  </div>
+                </div>
+                <div className="absolute bottom-4 right-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-hebrew-sans z-10">
                   שווי ממוצע $15M+
                 </div>
               </div>
@@ -375,7 +382,7 @@ export default function HebrewPage() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div className="relative order-2 md:order-1">
               <div className="relative h-[480px] md:h-[600px] overflow-hidden">
-                <Image src="/images/interior-dining.jpeg" alt="איריס מילשטיין" fill className="object-cover" />
+                <Image src="/images/iris-profile.jpeg" alt="איריס מילשטיין מומחית נדל&quot;ן יוקרה הרצליה פיתוח" fill className="object-cover" />
               </div>
               <div className="absolute -bottom-4 -left-4 w-48 h-48 border border-rose/30 -z-10" />
             </div>
