@@ -314,9 +314,9 @@ export default function HebrewPage() {
                   שווי ממוצע $15M+
                 </div>
               </div>
-              <div className="section-label mb-2 font-hebrew-sans">היכן החדשנות פוגשת את הים</div>
-              <h3 className="font-hebrew text-2xl md:text-3xl text-charcoal mb-3" style={{fontWeight: 300}}>הרצליה פיתוח</h3>
-              <p className="text-text-light text-sm leading-relaxed mb-5 font-hebrew-sans">
+              <div className="section-label mb-2 font-hebrew-sans text-right">היכן החדשנות פוגשת את הים</div>
+              <h3 className="font-hebrew text-2xl md:text-3xl text-charcoal mb-3 text-right" style={{fontWeight: 300}}>הרצליה פיתוח</h3>
+              <p className="text-text-light text-sm leading-relaxed mb-5 font-hebrew-sans text-right">
                 הכתובת החופית היוקרתית ביותר בישראל, בה גרים מנהלי הייטק, בעלי הון ומשפחות מהעולם. צעדים מהים התיכון, צמוד לסיליקון ואדי ולמרינה הגדולה בישראל.
               </p>
               <ul className="space-y-3">
@@ -325,12 +325,12 @@ export default function HebrewPage() {
                   ['מרינה הרצליה', 'יעד השייט המוביל של ישראל, מסעדות כוכבים'],
                   ['חינוך בינלאומי', 'בתי ספר בינלאומיים ויוקרתיים באזור'],
                 ].map(([title, desc]) => (
-                  <li key={title} className="flex gap-3 flex-row-reverse">
-                    <div className="w-1 h-1 rounded-full bg-rose mt-2 flex-shrink-0" />
+                  <li key={title} className="flex gap-3 justify-end">
                     <div className="text-right">
                       <span className="text-charcoal text-xs font-medium font-hebrew-sans">{title}</span>
                       <span className="text-text-light text-xs font-hebrew-sans"> — {desc}</span>
                     </div>
+                    <div className="w-1 h-1 rounded-full bg-rose mt-2 flex-shrink-0" />
                   </li>
                 ))}
               </ul>
@@ -343,9 +343,9 @@ export default function HebrewPage() {
                   פרטיות מוחלטת
                 </div>
               </div>
-              <div className="section-label mb-2 font-hebrew-sans">היכן הפרטיות פוגשת את המורשת</div>
-              <h3 className="font-hebrew text-2xl md:text-3xl text-charcoal mb-3" style={{fontWeight: 300}}>כפר שמריהו</h3>
-              <p className="text-text-light text-sm leading-relaxed mb-5 font-hebrew-sans">
+              <div className="section-label mb-2 font-hebrew-sans text-right">היכן הפרטיות פוגשת את המורשת</div>
+              <h3 className="font-hebrew text-2xl md:text-3xl text-charcoal mb-3 text-right" style={{fontWeight: 300}}>כפר שמריהו</h3>
+              <p className="text-text-light text-sm leading-relaxed mb-5 font-hebrew-sans text-right">
                 הכפר הסגור והיוקרתי ביותר בישראל — בית לדיפלומטים, שושלות עסקיות ומשפחות ותיקות. אחוזות מגודרות, גנים עתיקים ושקט מוחלט.
               </p>
               <ul className="space-y-3">
@@ -354,12 +354,12 @@ export default function HebrewPage() {
                   ['פרטיות מוחלטת', 'כפר סגור עם תשתיות אבטחה מתקדמות'],
                   ['קרבה לתל אביב', '15 דקות לעיר, עולם אחר בתוכה'],
                 ].map(([title, desc]) => (
-                  <li key={title} className="flex gap-3 flex-row-reverse">
-                    <div className="w-1 h-1 rounded-full bg-rose mt-2 flex-shrink-0" />
+                  <li key={title} className="flex gap-3 justify-end">
                     <div className="text-right">
                       <span className="text-charcoal text-xs font-medium font-hebrew-sans">{title}</span>
                       <span className="text-text-light text-xs font-hebrew-sans"> — {desc}</span>
                     </div>
+                    <div className="w-1 h-1 rounded-full bg-rose mt-2 flex-shrink-0" />
                   </li>
                 ))}
               </ul>
