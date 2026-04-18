@@ -431,8 +431,8 @@ export default function EnglishPage() {
         <div className="max-w-7xl mx-auto px-5 md:px-10">
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div className="relative">
-              <div className="relative h-[240px] md:h-[300px] overflow-hidden">
-                <Image src="/images/iris-profile.jpeg" alt="Iris Milstein luxury real estate expert Herzliya Pituach" fill className="object-cover" />
+              <div className="relative h-[380px] md:h-[460px] overflow-hidden">
+                <Image src="/images/iris-profile.jpeg" alt="Iris Milstein luxury real estate expert Herzliya Pituach" fill className="object-cover object-top" />
               </div>
               {/* Decorative frame */}
               <div className="absolute -bottom-4 -right-4 w-48 h-48 border border-rose/30 -z-10" />
