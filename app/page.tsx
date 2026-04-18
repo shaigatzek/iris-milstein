@@ -422,31 +422,31 @@ export default function EnglishPage() {
             </div>
             <div>
               <div className="section-label mb-4">About Iris</div>
-              <h2 className="font-serif text-3xl md:text-4xl text-charcoal font-light leading-tight mb-6">
-                A Trusted Guide in<br />Israel's Most Exclusive Market
+              <h2 className="font-serif text-3xl md:text-4xl text-charcoal font-light leading-tight mb-1">
+                Iris Milstein
               </h2>
+              <p className="text-text-light text-xs tracking-widest uppercase mb-6">Real Estate | Herzliya Pituach &amp; Kfar Shmaryahu</p>
               <div className="w-10 h-px bg-rose mb-7" />
               <p className="text-text-light text-sm leading-relaxed mb-5">
-                Iris Milstein brings a rare dual expertise to the luxury property market — a seasoned real estate consultant
-                and a licensed attorney, with deep roots in Herzliya Pituach and Kfar Shmaryahu.
+                With over 25 years spanning real estate, law, and marketing, Iris Milstein brings a rare combination of legal precision, market instinct, and creative vision to every transaction. Her career began at one of Israel's premier law firms, where she developed the analytical rigor and contractual expertise that still define her approach today. Combined with a deep background in advertising and marketing, Iris offers clients something few agents can — a complete, 360-degree view of every deal.
               </p>
               <p className="text-text-light text-sm leading-relaxed mb-5">
-                Her clients — from Silicon Wadi executives to international families seeking a permanent Israeli anchor —
-                trust her for her absolute discretion, meticulous legal knowledge, and her access to properties that
-                never reach the open market.
+                <span className="text-charcoal font-medium">She Knows This Neighborhood.</span> As a Herzliya Pituach resident for over 25 years, Iris doesn't just sell this neighborhood, she lives it. She knows the value of every street, every view, and every property condition. That intimate knowledge is something no algorithm can replicate.
               </p>
-              <p className="text-text-light text-sm leading-relaxed mb-8">
-                Whether you are purchasing from abroad, relocating, or investing in generational real estate,
-                Iris provides the clarity, confidence, and personal attention that this caliber of acquisition demands.
+              <p className="text-text-light text-sm leading-relaxed mb-5">
+                <span className="text-charcoal font-medium">A Practice Built on Trust.</span> Iris's success is built almost exclusively on referrals — a testament to the relationships she builds and the results she delivers. She earns her clients' trust by working tirelessly on their behalf, offering candid advice.
+              </p>
+              <p className="text-charcoal text-sm font-medium mb-8">
+                Integrity. Energy. Discretion. That's the Iris Milstein standard.
               </p>
               <div className="flex flex-wrap gap-6 mb-8">
                 <div className="border-l-2 border-rose pl-4">
-                  <div className="font-serif text-2xl text-charcoal">15+</div>
+                  <div className="font-serif text-2xl text-charcoal">25+</div>
                   <div className="text-text-light text-xs mt-0.5">Years of Expertise</div>
                 </div>
                 <div className="border-l-2 border-rose pl-4">
                   <div className="font-serif text-2xl text-charcoal">100%</div>
-                  <div className="text-text-light text-xs mt-0.5">Off-Market Access</div>
+                  <div className="text-text-light text-xs mt-0.5">Referral Based</div>
                 </div>
                 <div className="border-l-2 border-rose pl-4">
                   <div className="font-serif text-2xl text-charcoal">3</div>

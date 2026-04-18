@@ -381,21 +381,25 @@ export default function HebrewPage() {
             </div>
             <div className="order-1 md:order-2 text-right">
               <div className="section-label mb-4 font-hebrew-sans">אודות איריס</div>
-              <h2 className="font-hebrew text-3xl md:text-4xl text-charcoal font-light leading-tight mb-6">
-                המדריכה האמינה שלך<br />בשוק הנבחר ביותר בישראל
+              <h2 className="font-hebrew text-3xl md:text-4xl text-charcoal font-light leading-tight mb-1">
+                איריס מילשטיין
               </h2>
+              <p className="text-text-light text-xs tracking-widest uppercase mb-6 font-hebrew-sans">נדל"ן | הרצליה פיתוח וכפר שמריהו</p>
               <div className="w-10 h-px bg-rose mb-7 mr-0 ml-auto" />
               <p className="text-text-light text-sm leading-relaxed mb-5 font-hebrew-sans">
-                איריס מילשטיין מביאה מומחיות כפולה ונדירה לשוק הנדל"ן היוקרתי — יועצת נדל"ן מנוסה ועורכת דין מורשית, עם שורשים עמוקים בהרצליה פיתוח ובכפר שמריהו.
+                עם למעלה מ-25 שנות ניסיון המשלבות נדל"ן, משפט ושיווק, איריס מילשטיין מביאה שילוב נדיר של דיוק משפטי, אינסטינקט שוק וחזון יצירתי לכל עסקה. הקריירה שלה החלה באחד ממשרדי עורכי הדין המובילים בישראל, ובשילוב רקע עמוק בפרסום ושיווק, היא מציעה ללקוחותיה ראייה שלמה, 360 מעלות, של כל עסקה.
               </p>
               <p className="text-text-light text-sm leading-relaxed mb-5 font-hebrew-sans">
-                לקוחותיה — מנהלי ייטק, משפחות בינלאומיות ואנשי עסקים — סומכים עליה בשל שיקול הדעת המוחלט שלה, הידע המשפטי המעמיק וגישתה לנכסים שלא מגיעים לשוק הפתוח.
+                <span className="text-charcoal font-medium">היא מכירה את השכונה הזו.</span> כתושבת הרצליה פיתוח מזה למעלה מ-25 שנה, איריס לא רק מוכרת שכונה זו — היא חיה בה. היא יודעת את הערך של כל רחוב, כל נוף וכל מצב נכס. ידע אינטימי שאף אלגוריתם לא יכול לשכפל.
               </p>
-              <p className="text-text-light text-sm leading-relaxed mb-8 font-hebrew-sans">
-                בין אם אתם רוכשים נכס ראשון, נכס נוסף להשקעה, או מחפשים את הבית המושלם להתיישבות — איריס מספקת את הבהירות, הביטחון והליווי האישי שרכישה ברמה זו מחייבת.
+              <p className="text-text-light text-sm leading-relaxed mb-5 font-hebrew-sans">
+                <span className="text-charcoal font-medium">פרקטיקה הבנויה על אמון.</span> ההצלחה של איריס בנויה כמעט אך ורק על המלצות — עדות ליחסים שהיא בונה ולתוצאות שהיא מספקת. היא זוכה באמון לקוחותיה על ידי עבודה בלתי נלאית לטובתם ומתן עצות כנות.
+              </p>
+              <p className="text-charcoal text-sm font-medium mb-8 font-hebrew-sans">
+                יושרה. אנרגיה. שיקול דעת. זה הסטנדרט של איריס מילשטיין.
               </p>
               <div className="flex flex-wrap gap-6 mb-8 justify-end">
-                {[['15+', 'שנות ניסיון'], ['100%', 'נכסים מחוץ לשוק'], ['3', 'שפות']].map(([num, label]) => (
+                {[['25+', 'שנות ניסיון'], ['100%', 'על בסיס המלצות'], ['3', 'שפות']].map(([num, label]) => (
                   <div key={label} className="border-r-2 border-rose pr-4">
                     <div className="font-hebrew text-2xl text-charcoal">{num}</div>
                     <div className="text-text-light text-xs mt-0.5 font-hebrew-sans">{label}</div>
