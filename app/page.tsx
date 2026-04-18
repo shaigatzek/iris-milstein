@@ -340,16 +340,9 @@ export default function EnglishPage() {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16">
             {/* Herzliya */}
             <div>
-              <div className="relative h-72 md:h-96 mb-6">
-                <div className="grid grid-cols-2 gap-1 h-full overflow-hidden">
-                  <div className="relative overflow-hidden">
-                    <Image src="/images/pool-yard.jpeg" alt="Herzliya Pituach luxury pool estate" fill className="object-cover transition-transform duration-700 hover:scale-105" />
-                  </div>
-                  <div className="relative overflow-hidden">
-                    <Image src="/images/property-swimming-pool.jpeg" alt="Herzliya Pituach swimming pool villa" fill className="object-cover transition-transform duration-700 hover:scale-105" />
-                  </div>
-                </div>
-                <div className="absolute bottom-4 left-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-sans z-10">
+              <div className="relative h-72 md:h-96 overflow-hidden mb-6">
+                <Image src="/images/property-swimming-pool.jpeg" alt="Herzliya Pituach luxury swimming pool villa" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                <div className="absolute bottom-4 left-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-sans">
                   $15M+ Average Estate Value
                 </div>
               </div>
