@@ -8,24 +8,66 @@ import Logo from '@/components/Logo'
 const testimonials = [
   {
     quote:
-      'Iris was the most professional, reliable, honest agent I ever worked with. With patience and professionalism she helped us find our dream home. The whole process was a joy with Iris.',
-    name: 'S.B.',
-    location: 'London, UK',
-    deal: 'Acquired Herzliya Pituach Estate',
+      'Iris brings something completely different to real estate! For Iris, a property is not just walls and a few million, it\'s a home. She truly understands what her clients are looking for.',
+    name: 'Tsofnat',
+    location: 'Herzliya Pituach',
+    deal: 'Property Purchase',
   },
   {
     quote:
-      'We were particularly impressed by the understanding of international transaction requirements — POF verification, title insurance, and the seamless coordination across time zones. Truly a world-class experience.',
-    name: 'M.S.',
-    location: 'London, UK',
-    deal: 'Kfar Shmaryahu Family Compound',
+      'I\'ve turned to Iris more than once, because she succeeded in finding me a property that matched my expectations. She did so with professionalism, integrity, and close personal guidance throughout the entire process, above and beyond what was expected. Highly recommended!',
+    name: 'Shlomit',
+    location: 'Herzliya Pituach',
+    deal: 'Property Search',
   },
   {
     quote:
-      'After years of searching, we found not just a property but a trusted partner who understood our need for discretion. The off-market access opened doors we never knew existed.',
-    name: 'J.L.',
-    location: 'Paris, France',
-    deal: 'Coastal Villa Acquisition',
+      'Iris, thank you for the good, reliable and professional service. The personal attention, the close guidance throughout the entire process, and the attention to detail made everything so much simpler and easier.',
+    name: 'Adi',
+    location: 'Herzliya Pituach',
+    deal: 'Property Transaction',
+  },
+  {
+    quote:
+      'I thank Iris for her professionalism and warm personal attention. I chose to give Iris exclusivity and it proved to be an excellent decision. The property was rented professionally and quickly.',
+    name: 'Galya E.',
+    location: 'Herzliya Pituach',
+    deal: 'Rental',
+  },
+  {
+    quote:
+      'I highly recommend Iris Milstein. She takes her work with the utmost seriousness and gives it her all. This recommendation is only valid for those who are looking for results and peace of mind.',
+    name: 'Ohad',
+    location: 'Herzliya Pituach',
+    deal: 'Rental',
+  },
+  {
+    quote:
+      'Great service. Professional work with a lot of patience. Iris did a great job and after a few weeks we signed the rental agreement with a family from Germany. Iris has a deep understanding of the legal aspects. Very useful. I would certainly hire Iris Milstein in the future.',
+    name: 'Roni',
+    location: 'Herzliya Pituach',
+    deal: 'Rental Agreement',
+  },
+  {
+    quote:
+      'Iris is wonderful, efficient, polite and calm. You can ask for things and she responds promptly with quick answers. In short, a pleasure, highly recommended to everyone.',
+    name: 'Naama',
+    location: 'Herzliya Pituach',
+    deal: 'Property Transaction',
+  },
+  {
+    quote:
+      'Iris is an uncommon real estate agent. She is honest, polite, creative and attentive. I worked with her on several deals and was very satisfied!',
+    name: 'Liat',
+    location: 'Herzliya Pituach',
+    deal: 'Multiple Deals',
+  },
+  {
+    quote:
+      'Iris is diligent, creative, loyal and incredibly trustworthy. She has helped us greatly with property matters and years later continues to assist and give good advice across various areas of real estate, with warmth, reliability and great wisdom.',
+    name: 'Efrat',
+    location: 'Herzliya Pituach',
+    deal: 'Long-term Advisory',
   },
 ]
 
@@ -152,7 +194,7 @@ function NavBar() {
 
         {/* Mobile hamburger */}
         <button className="md:hidden text-white" onClick={() => setMenuOpen(!menuOpen)}>
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {menuOpen
               ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
               : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />}
@@ -221,13 +263,13 @@ export default function EnglishPage() {
               </p>
               <div className="flex flex-wrap gap-6 mb-8 md:mb-0">
                 <div className="flex items-center gap-2 text-white/60 text-xs">
-                  <svg className="w-3.5 h-3.5 text-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3.5 h-3.5 text-rose" width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                   Pre-Qualified Access
                 </div>
                 <div className="flex items-center gap-2 text-white/60 text-xs">
-                  <svg className="w-3.5 h-3.5 text-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3.5 h-3.5 text-rose" width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                   Absolute Discretion
@@ -416,7 +458,7 @@ export default function EnglishPage() {
                   href="tel:+97252252577"
                   className="flex items-center gap-2 text-charcoal hover:text-rose transition-colors text-sm"
                 >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   +972-52-2525277
@@ -425,7 +467,7 @@ export default function EnglishPage() {
                   href="mailto:iris@square34.com"
                   className="flex items-center gap-2 text-charcoal hover:text-rose transition-colors text-sm"
                 >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   iris@square34.com
@@ -451,7 +493,7 @@ export default function EnglishPage() {
               <div key={t.name} className="bg-ivory p-8 shadow-sm">
                 <div className="flex gap-0.5 mb-5">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-3.5 h-3.5 text-rose fill-current" viewBox="0 0 20 20">
+                    <svg key={i} className="w-3.5 h-3.5 text-rose fill-current" width="14" height="14" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
