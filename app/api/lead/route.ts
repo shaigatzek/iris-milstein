@@ -2,8 +2,6 @@ import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json()
@@ -29,6 +27,7 @@ export async function POST(req: NextRequest) {
     }
 
     if (process.env.RESEND_API_KEY) {
+      const resend = new Resend(process.env.RESEND_API_KEY)
       const lang = source === 'he' ? 'עברית' : 'English'
       await resend.emails.send({
         from: 'IrisMilstein.com <noreply@irismilstein.com>',
