@@ -75,9 +75,20 @@ const testimonials = [
 function LeadForm() {
   const [form, setForm] = useState({ name: '', phone: '', email: '', interest: '' })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [errors, setErrors] = useState<{ phone?: string; email?: string }>({})
+
+  const validate = () => {
+    const e: { phone?: string; email?: string } = {}
+    const digits = form.phone.replace(/\D/g, '')
+    if (digits.length < 9) e.phone = 'Please enter a valid phone number (min. 9 digits)'
+    if (form.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = 'Please enter a valid email address'
+    setErrors(e)
+    return Object.keys(e).length === 0
+  }
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
+    if (!validate()) return
     setStatus('loading')
     try {
       const res = await fetch('/api/lead', {
@@ -113,21 +124,27 @@ function LeadForm() {
         value={form.name}
         onChange={e => setForm({ ...form, name: e.target.value })}
       />
-      <input
-        className="input-luxury"
-        placeholder="International Contact Number"
-        required
-        type="tel"
-        value={form.phone}
-        onChange={e => setForm({ ...form, phone: e.target.value })}
-      />
-      <input
-        className="input-luxury"
-        placeholder="Email Address"
-        type="email"
-        value={form.email}
-        onChange={e => setForm({ ...form, email: e.target.value })}
-      />
+      <div>
+        <input
+          className="input-luxury"
+          placeholder="International Contact Number"
+          required
+          type="tel"
+          value={form.phone}
+          onChange={e => setForm({ ...form, phone: e.target.value })}
+        />
+        {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
+      </div>
+      <div>
+        <input
+          className="input-luxury"
+          placeholder="Email Address (optional)"
+          type="text"
+          value={form.email}
+          onChange={e => setForm({ ...form, email: e.target.value })}
+        />
+        {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+      </div>
       <select
         className="input-luxury appearance-none"
         value={form.interest}

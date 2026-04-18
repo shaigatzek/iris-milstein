@@ -66,9 +66,20 @@ const testimonials = [
 function LeadFormHe() {
   const [form, setForm] = useState({ name: '', phone: '', email: '' })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [errors, setErrors] = useState<{ phone?: string; email?: string }>({})
+
+  const validate = () => {
+    const e: { phone?: string; email?: string } = {}
+    const digits = form.phone.replace(/\D/g, '')
+    if (digits.length < 9) e.phone = 'נא להזין מספר טלפון תקין (לפחות 9 ספרות)'
+    if (form.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = 'נא להזין כתובת אימייל תקינה'
+    setErrors(e)
+    return Object.keys(e).length === 0
+  }
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
+    if (!validate()) return
     setStatus('loading')
     try {
       const res = await fetch('/api/lead', {
@@ -104,21 +115,27 @@ function LeadFormHe() {
         value={form.name}
         onChange={e => setForm({ ...form, name: e.target.value })}
       />
-      <input
-        className="input-luxury text-right"
-        placeholder="טלפון"
-        required
-        type="tel"
-        value={form.phone}
-        onChange={e => setForm({ ...form, phone: e.target.value })}
-      />
-      <input
-        className="input-luxury text-right"
-        placeholder="כתובת אימייל (אופציונלי)"
-        type="email"
-        value={form.email}
-        onChange={e => setForm({ ...form, email: e.target.value })}
-      />
+      <div>
+        <input
+          className="input-luxury text-right"
+          placeholder="טלפון"
+          required
+          type="tel"
+          value={form.phone}
+          onChange={e => setForm({ ...form, phone: e.target.value })}
+        />
+        {errors.phone && <p className="text-red-500 text-xs mt-1 text-right">{errors.phone}</p>}
+      </div>
+      <div>
+        <input
+          className="input-luxury text-right"
+          placeholder="כתובת אימייל (אופציונלי)"
+          type="text"
+          value={form.email}
+          onChange={e => setForm({ ...form, email: e.target.value })}
+        />
+        {errors.email && <p className="text-red-500 text-xs mt-1 text-right">{errors.email}</p>}
+      </div>
       <button
         type="submit"
         disabled={status === 'loading'}
