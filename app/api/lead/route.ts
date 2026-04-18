@@ -29,10 +29,10 @@ export async function POST(req: NextRequest) {
     if (process.env.RESEND_API_KEY) {
       const resend = new Resend(process.env.RESEND_API_KEY)
       const lang = source === 'he' ? 'עברית' : 'English'
-      await resend.emails.send({
+      const { data, error: emailError } = await resend.emails.send({
         from: 'IrisMilstein.com <noreply@irismilstein.com>',
         to: 'iris@irismilstein.com',
-        subject: `פנייה חדשה מהאתר — ${name.trim()}`,
+        subject: `פנייה חדשה מהאתר - ${name.trim()}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 500px; direction: rtl;">
             <h2 style="color: #C8A49A;">פנייה חדשה מהאתר</h2>
@@ -45,7 +45,11 @@ export async function POST(req: NextRequest) {
             <p style="color: #999; font-size: 12px;">נשלח מ-irismilstein.com</p>
           </div>
         `,
-      }).catch(err => console.error('Email error:', err))
+      })
+      if (emailError) console.error('Resend error:', emailError)
+      else console.log('Email sent:', data?.id)
+    } else {
+      console.warn('RESEND_API_KEY not set')
     }
 
     return NextResponse.json({ success: true })
