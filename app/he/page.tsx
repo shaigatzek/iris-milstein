@@ -389,7 +389,7 @@ export default function HebrewPage() {
       {/* ── ABOUT ─────────────────────────────────────────── */}
       <section id="about" className="bg-ivory py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-5 md:px-10">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
             <div className="order-1 text-right">
               <div className="section-label mb-4 font-hebrew-sans">אודות איריס</div>
               <h2 className="font-hebrew text-3xl md:text-4xl text-charcoal leading-tight mb-1" style={{fontWeight: 300}}>
@@ -445,7 +445,7 @@ export default function HebrewPage() {
                 </a>
               </div>
             </div>
-            <div className="order-2 flex justify-start">
+            <div className="order-2 flex justify-end">
               <div className="relative w-[270px] overflow-hidden" style={{aspectRatio: '3/4'}}>
                 <Image src="/images/iris-profile.jpeg" alt="איריס מילשטיין מומחית נדל&quot;ן יוקרה הרצליה פיתוח" fill className="object-cover object-top" />
               </div>
