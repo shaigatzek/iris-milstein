@@ -551,7 +551,7 @@ export default function EnglishPage() {
           </div>
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">+972-52-2525277</a>
-            <a href="mailto:iris@square34.com" className="hover:text-white transition-colors">iris@square34.com</a>
+            <a href="mailto:iris@irismilstein.com" className="hover:text-white transition-colors">iris@irismilstein.com</a>
             <a href="/he" className="hover:text-white transition-colors">עברית</a>
           </div>
           <p className="text-white/25 text-xs text-center">
