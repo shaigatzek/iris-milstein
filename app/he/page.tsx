@@ -389,7 +389,7 @@ export default function HebrewPage() {
       {/* ── ABOUT ─────────────────────────────────────────── */}
       <section id="about" className="bg-ivory py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-5 md:px-10">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-end">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="order-1 text-right">
               <div className="section-label mb-4 font-hebrew-sans">אודות איריס</div>
               <h2 className="font-hebrew text-3xl md:text-4xl text-charcoal leading-tight mb-1" style={{fontWeight: 300}}>
