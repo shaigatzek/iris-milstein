@@ -480,8 +480,8 @@ export default function EnglishPage() {
                 </a>
               </div>
             </div>
-            <div className="flex justify-end">
-              <div className="relative w-[270px] overflow-hidden" style={{aspectRatio: '3/4'}}>
+            <div className="flex justify-center md:justify-end">
+              <div className="relative w-[180px] md:w-[270px] overflow-hidden" style={{aspectRatio: '3/4'}}>
                 <Image src="/images/iris-profile.jpeg" alt="Iris Milstein luxury real estate expert Herzliya Pituach" fill className="object-cover object-top" />
               </div>
             </div>

@@ -445,8 +445,8 @@ export default function HebrewPage() {
                 </a>
               </div>
             </div>
-            <div className="order-2 flex justify-end">
-              <div className="relative w-[270px] overflow-hidden" style={{aspectRatio: '3/4'}}>
+            <div className="order-2 flex justify-center md:justify-end">
+              <div className="relative w-[180px] md:w-[270px] overflow-hidden" style={{aspectRatio: '3/4'}}>
                 <Image src="/images/iris-profile.jpeg" alt="איריס מילשטיין מומחית נדל&quot;ן יוקרה הרצליה פיתוח" fill className="object-cover object-top" />
               </div>
             </div>
