@@ -187,7 +187,7 @@ function NavBar() {
         {/* Logo */}
         <a href="/" className="flex-shrink-0 flex flex-col leading-none">
           <span className="text-white text-lg md:text-xl tracking-[0.2em] uppercase font-light" style={{ fontFamily: "'Inter', sans-serif" }}>IRIS MILSTEIN</span>
-          <span className="text-white/50 text-[9px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>LUXURY PROPERTIES</span>
+          <span className="text-white/50 text-[9px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>REAL ESTATE</span>
         </a>
 
         {/* Desktop Nav */}
@@ -514,7 +514,6 @@ export default function EnglishPage() {
                 </blockquote>
                 <div>
                   <div className="text-charcoal font-medium text-sm">{t.name}</div>
-                  <div className="text-text-light text-xs mt-0.5">{t.location}</div>
                   <div className="text-rose text-xs mt-1">{t.deal}</div>
                 </div>
               </div>
@@ -547,7 +546,7 @@ export default function EnglishPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col leading-none">
             <span className="text-white text-base tracking-[0.2em] uppercase font-light opacity-80" style={{ fontFamily: "'Inter', sans-serif" }}>IRIS MILSTEIN</span>
-            <span className="text-white/40 text-[8px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>LUXURY PROPERTIES</span>
+            <span className="text-white/40 text-[8px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>REAL ESTATE</span>
           </div>
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">+972-52-2525277</a>
@@ -555,7 +554,7 @@ export default function EnglishPage() {
             <a href="/he" className="hover:text-white transition-colors">עברית</a>
           </div>
           <p className="text-white/25 text-xs text-center">
-            © {new Date().getFullYear()} Iris Milstein Luxury Properties. All rights reserved.
+            © {new Date().getFullYear()} Iris Milstein Real Estate. All rights reserved.
           </p>
         </div>
       </footer>

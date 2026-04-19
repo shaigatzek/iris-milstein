@@ -17,14 +17,14 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Iris Milstein | Luxury Properties — Herzliya Pituach & Kfar Shmaryahu',
+  title: 'Iris Milstein | Real Estate — Herzliya Pituach & Kfar Shmaryahu',
   description:
     'Off-market luxury estates in Israel\'s most coveted coastal enclaves. Private viewings by appointment. Herzliya Pituach & Kfar Shmaryahu.',
   openGraph: {
-    title: 'Iris Milstein Luxury Properties',
+    title: 'Iris Milstein Real Estate',
     description: 'Off-market luxury estates in Herzliya Pituach & Kfar Shmaryahu',
     url: 'https://square34.com',
-    siteName: 'Iris Milstein Luxury Properties',
+    siteName: 'Iris Milstein Real Estate',
     locale: 'en_US',
     type: 'website',
   },

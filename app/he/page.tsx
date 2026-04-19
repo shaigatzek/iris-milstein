@@ -181,7 +181,7 @@ function NavBarHe() {
         {/* Logo — flex-shrink-0 keeps it in normal flow, right side in RTL */}
         <a href="/he" className="flex-shrink-0 flex flex-col leading-none">
           <span className="text-white text-lg md:text-xl tracking-[0.2em] uppercase font-light" style={{ fontFamily: "'Inter', sans-serif" }}>IRIS MILSTEIN</span>
-          <span className="text-white/50 text-[9px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>LUXURY PROPERTIES</span>
+          <span className="text-white/50 text-[9px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>REAL ESTATE</span>
         </a>
 
         {/* Right: phone + CTA */}
@@ -247,7 +247,7 @@ export default function HebrewPage() {
                 וילות ובתי יוקרה פרטיים בהרצליה פיתוח וכפר שמריהו.
               </p>
               <p className="text-white/55 text-sm font-light mb-6 font-hebrew-sans">
-                נכסים שאינם מוצעים לציבור — אך ורק ללקוחות נבחרים.
+                נכסים אקסקלוסיביים — אך ורק ללקוחות נבחרים.
               </p>
               <div className="flex flex-wrap gap-6 mb-6">
                 <div className="flex items-center gap-2 text-white/60 text-xs font-hebrew-sans">
@@ -479,7 +479,6 @@ export default function HebrewPage() {
                 </blockquote>
                 <div>
                   <div className="text-charcoal font-medium text-sm font-hebrew-sans">{t.name}</div>
-                  <div className="text-text-light text-xs mt-0.5 font-hebrew-sans">{t.location}</div>
                   <div className="text-rose text-xs mt-1 font-hebrew-sans">{t.deal}</div>
                 </div>
               </div>
@@ -493,10 +492,10 @@ export default function HebrewPage() {
         <div className="max-w-2xl mx-auto px-5">
           <div className="text-xs tracking-[0.2em] uppercase text-white/50 mb-4 font-hebrew-sans">צרו קשר</div>
           <h2 className="font-hebrew text-3xl md:text-4xl text-white mb-4" style={{fontWeight: 300}}>
-            מוכנים לגלות מה זמין?
+            מוכנים לקבוע פגישת ייעוץ פרטית?
           </h2>
           <p className="text-white/50 text-sm mb-8 font-hebrew-sans font-light">
-            רוב הנכסים שלנו לא מוצעים לציבור. קבעו ייעוץ אישי וגלו מה זמין מחוץ לשוק.
+            רשימת נכסים בבלעדיות
           </p>
           <a href="#contact" className="inline-block bg-rose hover:bg-rose-dark text-white text-xs tracking-widest uppercase px-10 py-4 transition-colors font-hebrew-sans">
             לפגישת ייעוץ פרטית
@@ -509,7 +508,7 @@ export default function HebrewPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col leading-none">
             <span className="text-white text-base tracking-[0.2em] uppercase font-light opacity-80" style={{ fontFamily: "'Inter', sans-serif" }}>IRIS MILSTEIN</span>
-            <span className="text-white/40 text-[8px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>LUXURY PROPERTIES</span>
+            <span className="text-white/40 text-[8px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>REAL ESTATE</span>
           </div>
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs font-hebrew-sans">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">052-2525277</a>
@@ -517,7 +516,7 @@ export default function HebrewPage() {
             <a href="/" className="hover:text-white transition-colors">English</a>
           </div>
           <p className="text-white/25 text-xs text-center font-hebrew-sans">
-            © {new Date().getFullYear()} Iris Milstein Luxury Properties. כל הזכויות שמורות.
+            © {new Date().getFullYear()} Iris Milstein Real Estate. כל הזכויות שמורות.
           </p>
         </div>
       </footer>

@@ -22,7 +22,7 @@ export default function Logo({ variant = 'light', className = '' }: LogoProps) {
       viewBox="0 0 260 42"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="Iris Milstein Luxury Properties"
+      aria-label="Iris Milstein Real Estate"
       style={{ display: 'block' }}
     >
       {/* ── IRIS ── */}
@@ -71,7 +71,7 @@ export default function Logo({ variant = 'light', className = '' }: LogoProps) {
       <line x1="131" y1="2" x2="141" y2="22" stroke={nameColor} strokeWidth="1.2" />
       <line x1="141" y1="2" x2="141" y2="22" stroke={nameColor} strokeWidth="1.2" />
 
-      {/* ── LUXURY PROPERTIES ── */}
+      {/* ── REAL ESTATE ── */}
       <text
         x="0"
         y="38"
@@ -81,7 +81,7 @@ export default function Logo({ variant = 'light', className = '' }: LogoProps) {
         fontFamily="'Inter', system-ui, sans-serif"
         fontWeight="300"
       >
-        LUXURY PROPERTIES
+        REAL ESTATE
       </text>
     </svg>
   )
