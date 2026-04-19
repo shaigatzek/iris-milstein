@@ -408,10 +408,10 @@ export default function EnglishPage() {
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
           {[
             'property-pool.jpeg',
-            'interior-dining.jpeg',
+            'pool-yard.jpeg',
             'property-exterior.jpeg',
-            'interior-kitchen.jpeg',
-            'hero-bg.jpeg',
+            'living-room.jpeg',
+            'living-room-area.jpeg',
             'property-garden.jpeg',
           ].map((img) => (
             <div key={img} className="relative h-32 md:h-48 overflow-hidden group">

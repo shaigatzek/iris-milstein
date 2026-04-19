@@ -372,12 +372,12 @@ export default function HebrewPage() {
       <section className="bg-taupe py-4">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
           {[
-            'interior-kitchen.jpeg',
+            'living-room.jpeg',
             'property-exterior.jpeg',
             'property-pool.jpeg',
-            'interior-dining.jpeg',
+            'pool-yard.jpeg',
             'property-garden.jpeg',
-            'hero-bg.jpeg',
+            'living-room-area.jpeg',
           ].map((img) => (
             <div key={img} className="relative h-32 md:h-48 overflow-hidden group">
               <Image src={`/images/${img}`} alt="נכס" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
