@@ -379,7 +379,7 @@ export default function EnglishPage() {
             {/* Kfar Shmaryahu */}
             <div>
               <div className="relative h-72 md:h-96 overflow-hidden mb-6">
-                <Image src="/images/property-garden.jpeg" alt="Kfar Shmaryahu" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                <Image src="/images/property-livingroom.png" alt="Kfar Shmaryahu" fill className="object-cover transition-transform duration-700 hover:scale-105" />
                 <div className="absolute bottom-4 left-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-sans">
                   Ultra-Private Enclave
                 </div>
