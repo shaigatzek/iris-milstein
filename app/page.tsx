@@ -203,8 +203,8 @@ function NavBar() {
           <a href="tel:+97252252577" className="text-white/80 text-xs hover:text-white transition-colors">
             +972-52-2525277
           </a>
-          <a href="#contact" className="bg-rose hover:bg-rose-dark text-white text-xs tracking-widest uppercase px-5 py-2.5 transition-colors">
-            Private Viewing
+          <a href="#contact" className="flex items-center justify-center bg-rose hover:bg-rose-dark px-3 py-2 transition-colors">
+            <Image src="/images/logo-mark.png" alt="Private Viewing" width={28} height={24} className="h-6 w-auto" />
           </a>
         </div>
 
