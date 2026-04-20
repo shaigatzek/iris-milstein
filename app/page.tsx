@@ -407,12 +407,12 @@ export default function EnglishPage() {
       <section className="bg-taupe py-4">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
           {[
-            'property-pool.jpeg',
+            'home-entrance.jpeg',
             'pool-yard.jpeg',
             'property-exterior.jpeg',
             'living-room.jpeg',
             'living-room-area.jpeg',
-            'property-garden.jpeg',
+            'white-bedroom.jpeg',
           ].map((img) => (
             <div key={img} className="relative h-32 md:h-48 overflow-hidden group">
               <Image
