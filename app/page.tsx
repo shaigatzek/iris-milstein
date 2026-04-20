@@ -254,7 +254,7 @@ export default function EnglishPage() {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-bg.jpeg"
+            src="/images/propery-livingroom.png"
             alt="Luxury estate"
             fill
             priority

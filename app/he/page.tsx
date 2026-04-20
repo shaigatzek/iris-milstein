@@ -227,7 +227,7 @@ export default function HebrewPage() {
       <section className="relative flex items-end md:items-center pt-16 min-h-[100svh] md:min-h-screen">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/property-garden.jpeg"
+            src="/images/propery-livingroom.png"
             alt="נכס יוקרה"
             fill
             priority
