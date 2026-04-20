@@ -180,7 +180,7 @@ function NavBarHe() {
 
         {/* Logo — flex-shrink-0 keeps it in normal flow, right side in RTL */}
         <a href="/he" className="flex-shrink-0">
-          <Image src="/images/logo-cmyk-blush.png" alt="Iris Milstein Real Estate" width={140} height={39} className="h-9 w-auto" priority />
+          <Image src="/images/logo-cmyk-blush.png" alt="Iris Milstein Real Estate" width={280} height={78} className="h-[78px] w-auto" priority />
         </a>
 
         {/* Right: phone + CTA */}
@@ -506,7 +506,7 @@ export default function HebrewPage() {
       <footer className="bg-dark border-t border-white/5 py-10 px-5 md:px-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <Image src="/images/logo-cmyk-blush.png" alt="Iris Milstein Real Estate" width={120} height={33} className="h-8 w-auto opacity-80" />
+            <Image src="/images/logo-cmyk-blush.png" alt="Iris Milstein Real Estate" width={240} height={66} className="h-[66px] w-auto opacity-80" />
           </div>
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs font-hebrew-sans">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">052-2525277</a>

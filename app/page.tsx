@@ -186,7 +186,7 @@ function NavBar() {
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex-shrink-0">
-          <Image src="/images/logo-cmyk-blush.png" alt="Iris Milstein Real Estate" width={140} height={39} className="h-9 w-auto" priority />
+          <Image src="/images/logo-cmyk-blush.png" alt="Iris Milstein Real Estate" width={280} height={78} className="h-[78px] w-auto" priority />
         </a>
 
         {/* Desktop Nav */}
@@ -544,7 +544,7 @@ export default function EnglishPage() {
       <footer className="bg-dark border-t border-white/5 py-10 px-5 md:px-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <Image src="/images/logo-cmyk-blush.png" alt="Iris Milstein Real Estate" width={120} height={33} className="h-8 w-auto opacity-80" />
+            <Image src="/images/logo-cmyk-blush.png" alt="Iris Milstein Real Estate" width={240} height={66} className="h-[66px] w-auto opacity-80" />
           </div>
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs">
             <a href="tel:+97252252577" className="hover:text-white transition-colors">+972-52-2525277</a>
