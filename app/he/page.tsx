@@ -179,9 +179,8 @@ function NavBarHe() {
         </div>
 
         {/* Logo — flex-shrink-0 keeps it in normal flow, right side in RTL */}
-        <a href="/he" className="flex-shrink-0 flex flex-col leading-none">
-          <span className="text-white text-lg md:text-xl tracking-[0.2em] uppercase font-light" style={{ fontFamily: "'Inter', sans-serif" }}>IRIS MILSTEIN</span>
-          <span className="text-white/50 text-[9px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>REAL ESTATE</span>
+        <a href="/he" className="flex-shrink-0">
+          <Image src="/images/logo-cmyk-blush.png" alt="Iris Milstein Real Estate" width={140} height={39} className="h-9 w-auto" priority />
         </a>
 
         {/* Right: phone + CTA */}

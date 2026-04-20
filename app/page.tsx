@@ -185,9 +185,8 @@ function NavBar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex-shrink-0 flex flex-col leading-none">
-          <span className="text-white text-lg md:text-xl tracking-[0.2em] uppercase font-light" style={{ fontFamily: "'Inter', sans-serif" }}>IRIS MILSTEIN</span>
-          <span className="text-white/50 text-[9px] tracking-[0.35em] uppercase mt-0.5" style={{ fontFamily: "'Inter', sans-serif" }}>REAL ESTATE</span>
+        <a href="/" className="flex-shrink-0">
+          <Image src="/images/logo-cmyk-blush.png" alt="Iris Milstein Real Estate" width={140} height={39} className="h-9 w-auto" priority />
         </a>
 
         {/* Desktop Nav */}
