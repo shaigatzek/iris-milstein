@@ -204,7 +204,7 @@ function NavBar() {
             +972-52-2525277
           </a>
           <a href="#contact" className="flex items-center justify-center">
-            <Image src="/images/logo-mark.png" alt="Private Viewing" width={28} height={24} className="h-6 w-auto" />
+            <Image src="/images/logo-mark.png" alt="Private Viewing" width={84} height={72} className="h-[72px] w-auto" />
           </a>
         </div>
 

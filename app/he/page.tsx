@@ -189,7 +189,7 @@ function NavBarHe() {
             052-2525277
           </a>
           <a href="#contact" className="flex items-center justify-center">
-            <Image src="/images/logo-mark.png" alt="צפייה פרטית" width={28} height={24} className="h-6 w-auto" />
+            <Image src="/images/logo-mark.png" alt="צפייה פרטית" width={84} height={72} className="h-[72px] w-auto" />
           </a>
         </div>
       </div>
