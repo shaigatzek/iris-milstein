@@ -376,7 +376,7 @@ export default function HebrewPage() {
             'property-exterior.jpeg',
             'white-bedroom.jpeg',
             'pool-yard.jpeg',
-            'home-entrance.jpeg',
+            'home-exterior.jpeg',
             'living-room-area.jpeg',
           ].map((img) => (
             <div key={img} className="relative h-32 md:h-48 overflow-hidden group">

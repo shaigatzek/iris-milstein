@@ -407,7 +407,7 @@ export default function EnglishPage() {
       <section className="bg-taupe py-4">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
           {[
-            'home-entrance.jpeg',
+            'home-exterior.jpeg',
             'pool-yard.jpeg',
             'property-exterior.jpeg',
             'living-room.jpeg',
