@@ -255,7 +255,7 @@ export default function EnglishPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/property-livingroom.png"
-            alt="Luxury estate"
+            alt="Luxury living room in Herzliya Pituach estate"
             fill
             priority
             className="object-cover object-center"
@@ -379,7 +379,7 @@ export default function EnglishPage() {
             {/* Kfar Shmaryahu */}
             <div>
               <div className="relative h-72 md:h-96 overflow-hidden mb-6">
-                <Image src="/images/property-livingroom.png" alt="Kfar Shmaryahu" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                <Image src="/images/property-livingroom.png" alt="Modern luxury living room in Kfar Shmaryahu estate" fill className="object-cover transition-transform duration-700 hover:scale-105" />
                 <div className="absolute bottom-4 left-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-sans">
                   Ultra-Private Enclave
                 </div>
@@ -414,17 +414,17 @@ export default function EnglishPage() {
       <section className="bg-taupe py-4">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
           {[
-            'home-exterior.jpeg',
-            'pool-yard.jpeg',
-            'property-exterior.jpeg',
-            'living-room.jpeg',
-            'living-room-area.jpeg',
-            'white-bedroom.jpeg',
-          ].map((img) => (
+            ['home-exterior.jpeg', 'Mediterranean luxury home exterior Herzliya Pituach'],
+            ['pool-yard.jpeg', 'Private pool and garden luxury property Herzliya Pituach'],
+            ['property-exterior.jpeg', 'Luxury villa exterior Herzliya Pituach Israel'],
+            ['living-room.jpeg', 'Designer living room luxury apartment Herzliya Pituach'],
+            ['living-room-area.jpeg', 'Luxury living area in Kfar Shmaryahu estate'],
+            ['white-bedroom.jpeg', 'Elegant master bedroom luxury villa Herzliya Pituach'],
+          ].map(([img, altText]) => (
             <div key={img} className="relative h-32 md:h-48 overflow-hidden group">
               <Image
                 src={`/images/${img}`}
-                alt="Property"
+                alt={altText}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />

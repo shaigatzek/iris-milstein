@@ -228,7 +228,7 @@ export default function HebrewPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/property-livingroom.png"
-            alt="נכס יוקרה"
+            alt="סלון יוקרה בנכס בהרצליה פיתוח"
             fill
             priority
             className="object-cover object-center"
@@ -345,7 +345,7 @@ export default function HebrewPage() {
 
             <div>
               <div className="relative h-72 md:h-96 overflow-hidden mb-6">
-                <Image src="/images/property-livingroom.png" alt="כפר שמריהו" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                <Image src="/images/property-livingroom.png" alt="סלון מודרני יוקרתי באחוזה בכפר שמריהו" fill className="object-cover transition-transform duration-700 hover:scale-105" />
                 <div className="absolute bottom-4 right-4 bg-dark/80 text-white text-xs px-3 py-1.5 font-hebrew-sans">
                   פרטיות מוחלטת
                 </div>
@@ -379,15 +379,15 @@ export default function HebrewPage() {
       <section className="bg-taupe py-4">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
           {[
-            'living-room.jpeg',
-            'property-exterior.jpeg',
-            'white-bedroom.jpeg',
-            'pool-yard.jpeg',
-            'home-exterior.jpeg',
-            'living-room-area.jpeg',
-          ].map((img) => (
+            ['living-room.jpeg', 'סלון יוקרה בדירת פנטהאוז הרצליה פיתוח'],
+            ['property-exterior.jpeg', 'חזית וילה יוקרתית בהרצליה פיתוח'],
+            ['white-bedroom.jpeg', 'חדר שינה ראשי אלגנטי בנכס יוקרה'],
+            ['pool-yard.jpeg', 'בריכה פרטית וגינה בנכס יוקרה הרצליה'],
+            ['home-exterior.jpeg', 'בית יוקרה ים תיכוני בהרצליה פיתוח'],
+            ['living-room-area.jpeg', 'אזור ישיבה יוקרתי באחוזה בכפר שמריהו'],
+          ].map(([img, altText]) => (
             <div key={img} className="relative h-32 md:h-48 overflow-hidden group">
-              <Image src={`/images/${img}`} alt="נכס" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
+              <Image src={`/images/${img}`} alt={altText} fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
             </div>
           ))}
         </div>
