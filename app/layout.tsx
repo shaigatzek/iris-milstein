@@ -103,11 +103,7 @@ const schemaOrg = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
-      <head>
-        {/* Google Analytics 4 — replace REPLACE_WITH_GA4_ID with your Measurement ID */}
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=REPLACE_WITH_GA4_ID"></script> */}
-        {/* <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','REPLACE_WITH_GA4_ID');` }} /> */}
-      </head>
+      <head />
       <body className="bg-ivory text-charcoal font-sans antialiased">
         {children}
         <Script
@@ -115,6 +111,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-8HQP0CRCBP"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-8HQP0CRCBP');`}
+        </Script>
       </body>
     </html>
   )
