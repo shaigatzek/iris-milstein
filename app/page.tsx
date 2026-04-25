@@ -162,7 +162,7 @@ function LeadForm() {
         disabled={status === 'loading'}
         className="btn-rose mt-2 disabled:opacity-60"
       >
-        {status === 'loading' ? 'Sending…' : 'Secure My Private Viewing'}
+        {status === 'loading' ? 'Sending…' : 'Request a Confidential Meeting'}
       </button>
       {status === 'error' && (
         <p className="text-red-500 text-xs text-center">Something went wrong. Please try again.</p>
@@ -310,8 +310,8 @@ export default function EnglishPage() {
 
             {/* Form — hidden on mobile (shown below hero), visible on desktop */}
             <div className="hidden md:block w-full md:w-[420px] bg-ivory/95 backdrop-blur-sm p-8 shadow-2xl">
-              <h2 className="font-serif text-charcoal text-xl mb-1">Request Exclusive Portfolio Access</h2>
-              <p className="text-charcoal/50 text-xs tracking-wider uppercase mb-7">Pre-Qualification Required</p>
+              <h2 className="font-serif text-charcoal text-xl mb-1">Begin With a Private Conversation</h2>
+              <p className="text-charcoal/50 text-xs tracking-wider uppercase mb-7">By Appointment Only</p>
               <LeadForm />
             </div>
 
@@ -323,8 +323,8 @@ export default function EnglishPage() {
       <section className="md:hidden bg-ivory shadow-inner">
         {/* scroll-mt ensures navbar doesn't cover the heading */}
         <div id="contact" className="scroll-mt-20 px-5 pt-10 pb-10">
-          <h2 className="font-serif text-charcoal text-2xl mb-1">Request Exclusive Portfolio Access</h2>
-          <p className="text-charcoal/50 text-xs tracking-wider uppercase mb-7">Pre-Qualification Required</p>
+          <h2 className="font-serif text-charcoal text-2xl mb-1">Begin With a Private Conversation</h2>
+          <p className="text-charcoal/50 text-xs tracking-wider uppercase mb-7">By Appointment Only</p>
           <LeadForm />
         </div>
       </section>
