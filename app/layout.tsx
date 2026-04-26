@@ -94,7 +94,7 @@ const schemaOrg = {
     longitude: 34.7867,
   },
   sameAs: [
-    'https://www.facebook.com/iris.milstein',
+    'https://www.facebook.com/iris.milstein.2025',
     'https://www.instagram.com/iris.milstein/',
   ],
   priceRange: '$$$$$',
