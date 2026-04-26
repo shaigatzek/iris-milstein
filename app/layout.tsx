@@ -84,8 +84,8 @@ const schemaOrg = {
   ],
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Zohar Tal 34',
-    addressLocality: 'Herzliya Pituach',
+    streetAddress: 'Moshe Sharet 20',
+    addressLocality: 'Herzliya',
     addressCountry: 'IL',
   },
   geo: {
@@ -95,7 +95,7 @@ const schemaOrg = {
   },
   sameAs: [
     'https://www.facebook.com/iris.milstein',
-    'https://www.instagram.com/iris_milstein/',
+    'https://www.instagram.com/iris.milstein/',
   ],
   priceRange: '$$$$$',
 }
