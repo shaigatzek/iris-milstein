@@ -543,7 +543,7 @@ export default function EnglishPage() {
             href="#contact"
             className="inline-block bg-rose hover:bg-rose-dark text-white text-xs tracking-widest uppercase px-10 py-4 transition-colors"
           >
-            Request Private Portfolio Access
+            Request a Confidential Meeting
           </a>
         </div>
       </section>
